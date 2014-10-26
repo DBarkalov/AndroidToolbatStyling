@@ -27,8 +27,9 @@ public class PlaceholderFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_my, container, false);
 
         Toolbar toolbar = (Toolbar) rootView.findViewById(R.id.toolbar);
-        ((ActionBarActivity)getActivity()).setSupportActionBar(toolbar);
-
+        //((ActionBarActivity)getActivity()).setSupportActionBar(toolbar);
+        toolbar.inflateMenu(R.menu.my);
+        toolbar.setTitle("MyTitle");
         //toolbar.inflateMenu(R.menu.my);
         return rootView;
     }
