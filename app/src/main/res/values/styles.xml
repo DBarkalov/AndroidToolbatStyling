@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+       <!--<item name="android:actionBarStyle">@style/ActionBarStyle</item>
+       --> <!-- Set AppCompat’s color theming attrs -->
+        <item name="colorPrimary">@color/action_bar_bg</item>
+        <item name="colorPrimaryDark">@color/action_bar_bg</item>
+        <!--<item name="colorAccent">@color/accent</item>-->
+        <item name="toolbarStyle">@style/ToolBarStyle</item>
+
+    </style>
+
+    <style name="ToolBarStyle" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="theme">@style/ToolbarTheme</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="titleTextAppearance">@style/ActionBarTextAppearance</item>
+        <!--<item name="navigationIcon">@drawable/abc_list_focused_holo</item>-->
+    </style>
+
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="titleTextAppearance">@style/ActionBarTextAppearance</item>
+        <item name="colorPrimary">@color/action_bar_bg</item>
+        <item name="colorPrimaryDark">@color/accent</item>
+        <item name="navigationIcon">@drawable/abc_ic_menu_copy_mtrl_am_alpha</item>
+        <!--   <item name="android:background">@color/red</item>-->
+        <!-- <item name="android:selectableItemBackground">@drawable/crop_avatar_btn</item>
+         <item name="selectableItemBackground">@drawable/crop_avatar_btn</item>-->
+    </style>
+
+
+    <style name="ActionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
+        <item name="android:selectableItemBackground">@color/action_bar_bg</item>
+    </style>
+
+    <style name="ActionBarTextAppearance" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/title_color</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <color name="action_bar_bg">#168DE2</color>
+    <color name="accent">#188AD0</color>
+    <color name="title_color">#FF00FF</color>
+
+</resources>
