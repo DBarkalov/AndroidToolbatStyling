@@ -2,7 +2,7 @@
 <resources>
 
     <string name="app_name">ToolBarTest</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="hello_world">Action bar styling</string>
     <string name="action_settings">Settings</string>
 
 </resources>

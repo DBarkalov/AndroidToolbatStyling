@@ -1,6 +1,5 @@
 package com.diolan.toolbartest;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
@@ -15,7 +14,7 @@ public class MyActivity extends ActionBarActivity {
         setContentView(R.layout.activity_my);
         if (savedInstanceState == null) {
             getFragmentManager().beginTransaction()
-                    .add(R.id.container, new PlaceholderFragment())
+                    .add(R.id.container, new TestFragment())
                     .commit();
         }
     }
